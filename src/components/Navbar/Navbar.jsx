@@ -32,8 +32,14 @@ export default function Navbar() {
 
   return (
     <nav className="relative z-50 flex items-center justify-between px-6 md:px-12 py-5 border-b border-[#1F1F1F]">
-      <a href="/" className="font-heading text-lg font-bold tracking-tight">
-        DP
+      <a href="/" className="shrink-0" aria-label="Home">
+        <img
+          src="/images/avatar.jpg"
+          alt="Dev Patel"
+          width={40}
+          height={40}
+          className="w-10 h-10 rounded-full object-cover border border-[#1F1F1F] hover:border-[#8B5CF6] transition-colors"
+        />
       </a>
 
       {/* Desktop links */}
