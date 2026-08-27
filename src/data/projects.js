@@ -1,0 +1,42 @@
+export const projects = [
+  {
+    id: "music-streaming",
+    name: "Music Streaming Platform",
+    description: "A full-stack streaming app with playlists, real-time playback, and search.",
+    tags: ["React", "Node.js", "MongoDB"],
+    demoUrl: "https://music-web-gamma-eight.vercel.app/",
+    githubUrl: "https://github.com/22devpatel007-coder/MeloStrem-web.git",
+  },
+  {
+    id: "camera-rental",
+    name: "Camera Rental Platform",
+    description: "Booking system for renting camera gear with availability calendar and payments.",
+    tags: ["Next.js", "Express", "MySQL"],
+    demoUrl: "https://camerahub.free.je/",
+    githubUrl: "https://github.com/22devpatel007-coder/Camera-rental.git",
+  },
+  {
+    id: "car-rental",
+    name: "Car Rental Platform",
+    description: "End-to-end car rental workflow — search, booking, and admin dashboard.",
+    tags: ["React", "Node.js", "MySQL"],
+    demoUrl: "",
+    githubUrl: "",
+  },
+  {
+    id: "translator-script",
+    name: "Translator Script",
+    description: "Lightweight CLI/automation tool for batch translating text files.",
+    tags: ["Node.js", "Git"],
+    demoUrl: "",
+    githubUrl: "",
+  },
+  {
+    id: "dental-clinic",
+    name: "Dental Clinic Website",
+    description: "Marketing site with appointment booking for a local dental practice.",
+    tags: ["Next.js", "React"],
+    demoUrl: "",
+    githubUrl: "",
+  },
+];
