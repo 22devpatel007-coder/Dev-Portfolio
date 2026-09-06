@@ -1,11 +1,13 @@
 import Navbar from "@/components/Navbar/Navbar";
-import GithubGraph from "@/components/GithubGraph/GithubGraph";
 import HeroStats from "./HeroStats";
 import ProductShowcase from "@/components/ProductShowcase/ProductShowcase";
+import HeroBackground from "@/components/ProductShowcase/HeroBackground";
 
 export default function Hero() {
   return (
+    
     <section className="relative w-full bg-[#050505] text-white overflow-hidden">
+      <HeroBackground />
       {/* subtle background grid */}
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.05]"
@@ -27,7 +29,10 @@ export default function Hero() {
             <h1 className="font-heading font-bold text-4xl md:text-6xl leading-tight tracking-tight">
               Turning Ideas
               <br />
-              Into Real Products
+              Into{" "}
+              <span className="bg-clip-text text-transparent bg-[linear-gradient(135deg,#8B5CF6_0%,#A78BFA_100%)]">
+                Real Products
+              </span>
             </h1>
 
             <p className="mt-6 text-base md:text-lg text-[#A1A1AA] max-w-md">
@@ -60,13 +65,6 @@ export default function Hero() {
             <div className="w-full max-w-[260px] md:max-w-[340px] mx-auto md:mx-0">
               <ProductShowcase />
             </div>
-          </div>
-        </div>
-
-        {/* GitHub contribution graph, centered */}
-        <div className="mt-10 flex justify-center motion-safe:animate-[heroFadeIn_600ms_ease-out_250ms_both]">
-          <div className="w-full max-w-3xl">
-            <GithubGraph />
           </div>
         </div>
       </div>
